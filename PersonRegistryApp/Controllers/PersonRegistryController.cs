@@ -17,6 +17,9 @@ namespace PersonRegistryApp.Controllers
             new PersonRegistry {Id = 103, FirstName="Meghan", LastName="Smith", Gender='F', Occupation="Business Analyst", StreetAddress="12 Jackson Street", CityAddress="Duluth", State="GA", ZipCode="30096", RecordedTime = DateTime.Now },
             new PersonRegistry {Id = 104, FirstName="Jackson", LastName="Woodson", Gender='M', Occupation="EVP Technology at Startup", StreetAddress="18AB Atlanta NW Rd", CityAddress="Atlanta", State="GA", ZipCode="30105", RecordedTime = DateTime.Now }
         };
+
+        //[Authorize(Roles = "Administrators")]
+
         // GET: api/PersonRegistry
         public IEnumerable<PersonRegistry> GetAllPersonRegistry()
         {

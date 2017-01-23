@@ -85,6 +85,5 @@ C:\Users\Shema\Documents\Visual Studio 2015\Projects\WebApiPrep\PersonRegistryAp
 C:\Users\Shema\Documents\Visual Studio 2015\Projects\WebApiPrep\PersonRegistryApp\PersonRegistryApp\bin\Microsoft.Owin.Security.Twitter.xml
 C:\Users\Shema\Documents\Visual Studio 2015\Projects\WebApiPrep\PersonRegistryApp\PersonRegistryApp\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 C:\Users\Shema\Documents\Visual Studio 2015\Projects\WebApiPrep\PersonRegistryApp\PersonRegistryApp\bin\System.Web.Http.Owin.xml
-C:\Users\Shema\Documents\Visual Studio 2015\Projects\WebApiPrep\PersonRegistryApp\PersonRegistryApp\obj\Debug\PersonRegistryApp.csprojResolveAssemblyReference.cache
 C:\Users\Shema\Documents\Visual Studio 2015\Projects\WebApiPrep\PersonRegistryApp\PersonRegistryApp\obj\Debug\PersonRegistryApp.dll
 C:\Users\Shema\Documents\Visual Studio 2015\Projects\WebApiPrep\PersonRegistryApp\PersonRegistryApp\obj\Debug\PersonRegistryApp.pdb

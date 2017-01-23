@@ -1,0 +1,80 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>PersonRegistryView</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <script src="~/Scripts/jquery-1.10.2.js"></script>
+    <script src="~/Scripts/DataTables/jquery.dataTables.min.js"></script>
+    <link href="~/Content/DataTables/css/jquery.dataTables.min.css" rel="stylesheet" />
+</head>
+<body>
+    <table id="tbl_Registry" width="400px">
+        <caption>Person Registry Table</caption>
+        <thead>
+            <tr>
+                <th> Id </th>
+                <th> First Name </th>
+                <th> Last Name </th>
+                <th> Occupation </th>
+                <th> Gender </th>
+                <th> Street Address</th>
+                <th> City Address</th>
+                <th> State </th>
+                <th> Zip Code </th>
+                <th> Recorded Time </th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <div> 
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            getRegistry();
+            $("#tbl_Registry").dataTable({
+                'iDisplayLength': 5,
+                'bJQueryUI': true,
+                "aaData": [],
+                "oLanguage": { "sEmptyTable": "No teams were found with the API provided" },
+                "sDom": '<"H"lf<"clear-right"p>>rt<"F"ip>',
+            });
+        });
+        
+
+
+        function getRegistry() {
+            var url = 'http://localhost:54770/api/PersonRegistry';
+            var DataArray = [];
+            $.ajax({
+                url: url,
+                dataType: 'JSON',
+                type: 'GET',
+            }).done(function (data) {
+                $.each(data, function () {
+                    DataArray.push([this.Id,
+                        this.FirstName,
+                        this.LastName,
+                        this.Occupation,
+                        this.Gender,
+                        this.StreetAddress,
+                        this.CityAddress,
+                        this.State,
+                        this.ZipCode,
+                        this.RecordedTime])
+                });
+            });
+            $('#tbl_Registry').dataTable().fnAddData(DataArray);
+            $('#tbl_Registry').dataTable().fnAdjustColumnSizing();
+        }
+    </script>
+</body>
+</html>
