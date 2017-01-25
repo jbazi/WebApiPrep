@@ -17,6 +17,7 @@ C:\Users\Shema\Documents\Visual Studio 2015\Projects\WebApiPrep\PersonRegistryAp
 C:\Users\Shema\Documents\Visual Studio 2015\Projects\WebApiPrep\PersonRegistryApp\PersonRegistryApp\bin\Antlr3.Runtime.dll
 C:\Users\Shema\Documents\Visual Studio 2015\Projects\WebApiPrep\PersonRegistryApp\PersonRegistryApp\bin\EntityFramework.dll
 C:\Users\Shema\Documents\Visual Studio 2015\Projects\WebApiPrep\PersonRegistryApp\PersonRegistryApp\bin\EntityFramework.SqlServer.dll
+C:\Users\Shema\Documents\Visual Studio 2015\Projects\WebApiPrep\PersonRegistryApp\PersonRegistryApp\bin\IdentityServer3.dll
 C:\Users\Shema\Documents\Visual Studio 2015\Projects\WebApiPrep\PersonRegistryApp\PersonRegistryApp\bin\Microsoft.AI.Agent.Intercept.dll
 C:\Users\Shema\Documents\Visual Studio 2015\Projects\WebApiPrep\PersonRegistryApp\PersonRegistryApp\bin\Microsoft.AI.DependencyCollector.dll
 C:\Users\Shema\Documents\Visual Studio 2015\Projects\WebApiPrep\PersonRegistryApp\PersonRegistryApp\bin\Microsoft.AI.PerfCounterCollector.dll
@@ -40,6 +41,7 @@ C:\Users\Shema\Documents\Visual Studio 2015\Projects\WebApiPrep\PersonRegistryAp
 C:\Users\Shema\Documents\Visual Studio 2015\Projects\WebApiPrep\PersonRegistryApp\PersonRegistryApp\bin\Microsoft.Web.Infrastructure.dll
 C:\Users\Shema\Documents\Visual Studio 2015\Projects\WebApiPrep\PersonRegistryApp\PersonRegistryApp\bin\Newtonsoft.Json.dll
 C:\Users\Shema\Documents\Visual Studio 2015\Projects\WebApiPrep\PersonRegistryApp\PersonRegistryApp\bin\Owin.dll
+C:\Users\Shema\Documents\Visual Studio 2015\Projects\WebApiPrep\PersonRegistryApp\PersonRegistryApp\bin\System.IdentityModel.Tokens.Jwt.dll
 C:\Users\Shema\Documents\Visual Studio 2015\Projects\WebApiPrep\PersonRegistryApp\PersonRegistryApp\bin\System.Net.Http.Formatting.dll
 C:\Users\Shema\Documents\Visual Studio 2015\Projects\WebApiPrep\PersonRegistryApp\PersonRegistryApp\bin\System.Web.Helpers.dll
 C:\Users\Shema\Documents\Visual Studio 2015\Projects\WebApiPrep\PersonRegistryApp\PersonRegistryApp\bin\System.Web.Http.dll
@@ -51,13 +53,20 @@ C:\Users\Shema\Documents\Visual Studio 2015\Projects\WebApiPrep\PersonRegistryAp
 C:\Users\Shema\Documents\Visual Studio 2015\Projects\WebApiPrep\PersonRegistryApp\PersonRegistryApp\bin\System.Web.WebPages.Deployment.dll
 C:\Users\Shema\Documents\Visual Studio 2015\Projects\WebApiPrep\PersonRegistryApp\PersonRegistryApp\bin\System.Web.WebPages.dll
 C:\Users\Shema\Documents\Visual Studio 2015\Projects\WebApiPrep\PersonRegistryApp\PersonRegistryApp\bin\System.Web.WebPages.Razor.dll
+C:\Users\Shema\Documents\Visual Studio 2015\Projects\WebApiPrep\PersonRegistryApp\PersonRegistryApp\bin\Thinktecture.IdentityModel.dll
+C:\Users\Shema\Documents\Visual Studio 2015\Projects\WebApiPrep\PersonRegistryApp\PersonRegistryApp\bin\Thinktecture.IdentityServer.Core.dll
+C:\Users\Shema\Documents\Visual Studio 2015\Projects\WebApiPrep\PersonRegistryApp\PersonRegistryApp\bin\Thinktecture.IdentityServer.Core.Repositories.dll
+C:\Users\Shema\Documents\Visual Studio 2015\Projects\WebApiPrep\PersonRegistryApp\PersonRegistryApp\bin\Thinktecture.IdentityServer.Protocols.dll
 C:\Users\Shema\Documents\Visual Studio 2015\Projects\WebApiPrep\PersonRegistryApp\PersonRegistryApp\bin\WebGrease.dll
+C:\Users\Shema\Documents\Visual Studio 2015\Projects\WebApiPrep\PersonRegistryApp\PersonRegistryApp\bin\IdentityServer3.pdb
+C:\Users\Shema\Documents\Visual Studio 2015\Projects\WebApiPrep\PersonRegistryApp\PersonRegistryApp\bin\IdentityServer3.xml
 C:\Users\Shema\Documents\Visual Studio 2015\Projects\WebApiPrep\PersonRegistryApp\PersonRegistryApp\bin\Microsoft.AI.DependencyCollector.xml
 C:\Users\Shema\Documents\Visual Studio 2015\Projects\WebApiPrep\PersonRegistryApp\PersonRegistryApp\bin\Microsoft.AI.ServerTelemetryChannel.xml
 C:\Users\Shema\Documents\Visual Studio 2015\Projects\WebApiPrep\PersonRegistryApp\PersonRegistryApp\bin\Microsoft.AI.Web.xml
 C:\Users\Shema\Documents\Visual Studio 2015\Projects\WebApiPrep\PersonRegistryApp\PersonRegistryApp\bin\Microsoft.AI.WindowsServer.xml
 C:\Users\Shema\Documents\Visual Studio 2015\Projects\WebApiPrep\PersonRegistryApp\PersonRegistryApp\bin\Microsoft.ApplicationInsights.xml
 C:\Users\Shema\Documents\Visual Studio 2015\Projects\WebApiPrep\PersonRegistryApp\PersonRegistryApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Shema\Documents\Visual Studio 2015\Projects\WebApiPrep\PersonRegistryApp\PersonRegistryApp\bin\System.IdentityModel.Tokens.Jwt.xml
 C:\Users\Shema\Documents\Visual Studio 2015\Projects\WebApiPrep\PersonRegistryApp\PersonRegistryApp\bin\Newtonsoft.Json.xml
 C:\Users\Shema\Documents\Visual Studio 2015\Projects\WebApiPrep\PersonRegistryApp\PersonRegistryApp\bin\System.Net.Http.Formatting.xml
 C:\Users\Shema\Documents\Visual Studio 2015\Projects\WebApiPrep\PersonRegistryApp\PersonRegistryApp\bin\System.Web.Helpers.xml
@@ -69,6 +78,8 @@ C:\Users\Shema\Documents\Visual Studio 2015\Projects\WebApiPrep\PersonRegistryAp
 C:\Users\Shema\Documents\Visual Studio 2015\Projects\WebApiPrep\PersonRegistryApp\PersonRegistryApp\bin\System.Web.WebPages.xml
 C:\Users\Shema\Documents\Visual Studio 2015\Projects\WebApiPrep\PersonRegistryApp\PersonRegistryApp\bin\System.Web.WebPages.Deployment.xml
 C:\Users\Shema\Documents\Visual Studio 2015\Projects\WebApiPrep\PersonRegistryApp\PersonRegistryApp\bin\System.Web.WebPages.Razor.xml
+C:\Users\Shema\Documents\Visual Studio 2015\Projects\WebApiPrep\PersonRegistryApp\PersonRegistryApp\bin\Thinktecture.IdentityModel.pdb
+C:\Users\Shema\Documents\Visual Studio 2015\Projects\WebApiPrep\PersonRegistryApp\PersonRegistryApp\bin\Thinktecture.IdentityModel.xml
 C:\Users\Shema\Documents\Visual Studio 2015\Projects\WebApiPrep\PersonRegistryApp\PersonRegistryApp\bin\Antlr3.Runtime.pdb
 C:\Users\Shema\Documents\Visual Studio 2015\Projects\WebApiPrep\PersonRegistryApp\PersonRegistryApp\bin\EntityFramework.xml
 C:\Users\Shema\Documents\Visual Studio 2015\Projects\WebApiPrep\PersonRegistryApp\PersonRegistryApp\bin\EntityFramework.SqlServer.xml
@@ -87,3 +98,7 @@ C:\Users\Shema\Documents\Visual Studio 2015\Projects\WebApiPrep\PersonRegistryAp
 C:\Users\Shema\Documents\Visual Studio 2015\Projects\WebApiPrep\PersonRegistryApp\PersonRegistryApp\bin\System.Web.Http.Owin.xml
 C:\Users\Shema\Documents\Visual Studio 2015\Projects\WebApiPrep\PersonRegistryApp\PersonRegistryApp\obj\Debug\PersonRegistryApp.dll
 C:\Users\Shema\Documents\Visual Studio 2015\Projects\WebApiPrep\PersonRegistryApp\PersonRegistryApp\obj\Debug\PersonRegistryApp.pdb
+C:\Users\Shema\Documents\Visual Studio 2015\Projects\WebApiPrep\PersonRegistryApp\PersonRegistryApp\bin\Microsoft.IdentityModel.Protocol.Extensions.dll
+C:\Users\Shema\Documents\Visual Studio 2015\Projects\WebApiPrep\PersonRegistryApp\PersonRegistryApp\bin\Microsoft.Owin.Security.OpenIdConnect.dll
+C:\Users\Shema\Documents\Visual Studio 2015\Projects\WebApiPrep\PersonRegistryApp\PersonRegistryApp\bin\Microsoft.IdentityModel.Protocol.Extensions.xml
+C:\Users\Shema\Documents\Visual Studio 2015\Projects\WebApiPrep\PersonRegistryApp\PersonRegistryApp\bin\Microsoft.Owin.Security.OpenIdConnect.xml

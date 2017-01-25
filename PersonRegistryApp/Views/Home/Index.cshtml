@@ -44,13 +44,33 @@
     </thead>
     
 </table>
+<hr />
+
+<form action="http://localhost:54770/api/PersonRegistry" method="post">
+    <fieldset>
+        <legend> Person Registry Form </legend>
+        <input id="fName" type="text" placeholder="First Name" required />
+        <input id="lName" type="text" placeholder="Last Name" required />
+        <input id="occptn" type="text" placeholder="Occupation" required />
+        <select>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select> <br />
+        <input id="sAddress" type="text" placeholder="Street Address" required />
+        <input id="cAddress" type="text" placeholder="City" required />
+        <input id="state" type="text" placeholder="State" required />
+        <input id="zCode" type="text" placeholder="Zip Code" required />
+
+        <input id="btnSave" type="submit" value="Submit" />
+    </fieldset>
+</form>
 
 <script>
     $(document).ready(function () {
-        alert("test alert");
+        //alert("test alert");
         //myOtherWay();
         
-        
+        //$('form').hide();
         
         $("#tbl_Registry").dataTable({
             "bInfo": false,
@@ -60,11 +80,14 @@
             "aaData": [],
         });
         getPersonRegistry();
-        
+        $('#btnSave').click(function () {
+            newPersonRegistry();
+        });
+        //getIds();
     });
 
     function myOtherWay() {
-        var url = 'http://localhost:54770/api/PersonRegistry';
+        var url = 'https://localhost:44344/api/PersonRegistry';
 
         $.ajax({
             url: url,
@@ -87,7 +110,7 @@
     }
 
     function renderPersonRegistry(data) {
-        var url = 'http://localhost:54770/api/PersonRegistry';
+        var url = 'https://localhost:44344/api/PersonRegistry';
         var DataArray = [];
         
         $.each(data, function () {
@@ -105,10 +128,39 @@
 
         $('#tbl_Registry').dataTable().fnAddData(DataArray);
         $('#tbl_Registry').dataTable().fnAdjustColumnSizing();
+
+        var lastItem = DataArray[DataArray.length - 1];
+        console.log(lastItem)
+    }
+
+    function getIds() {
+        var DataArray = [];
+        var url = 'https://localhost:44344/api/PersonRegistry';
+        $.ajax({
+            url: url,
+            dataType: 'json',
+            type: 'GET',
+        }).done(function (data) {
+            $.each(data, function () {
+                DataArray.push(this.Id);
+            });
+        });
+        var lastId = DataArray[DataArray.length - 1] + 1;
+        console.log(lastId);
+        return lastId;
+    }
+
+    function renderIds(data) {
+        var DataArray = [];
+        $.each(data, function () {
+            DataArray.push(this.Id);
+        })
+        var lastId = DataArray[DataArray.length - 1] + 1;
+        return lastId;
     }
 
     function getPersonRegistry() {
-        var url = 'http://localhost:54770/api/PersonRegistry';
+        var url = 'https://localhost:44344/api/PersonRegistry';
         $.ajax({
             url: url,
             dataType: 'json',
@@ -116,5 +168,41 @@
         }).done(function (response) {
             renderPersonRegistry(response);
         });
+    }
+
+    function newPersonRegistry() {
+        getIds();
+        var id, firstName, lastName, occupation, gender, stAddress, city, state, zCode;
+        id = getIds();
+        firstName = $('#fName').val();
+        lastName = $('#lName').val();
+        occupation = $('#occptn').val();
+        gender = $('select').val();
+        stAddress = $('#sAddress').val();
+        city = $('#cAddress').val();
+        state = $('#state').val();
+        zCode = $('#zCode').val();
+        var recordTime = '10:20AM';
+        $.ajax({
+            url: 'https://localhost:44344/api/PersonRegistry',
+            type: 'POST',
+            cache: false,
+            data: {
+                Id: 106,
+                FirstName: firstName,
+                LastName: lastName,
+                Occupation: occupation,
+                Gender: gender,
+                StreetAddress: stAddress,
+                CityAddress: city,
+                State: state,
+                ZipCode: zCode,
+                RecordedTime: recordTime
+            },
+            success: function (data) {
+                $('#statusUpdate').html(firstName + " " + lastName + "'s record has been created successfully. Unselect and refresh browser to update the page.").fadeOut(7500);
+            },
+        })
+
     }
 </script>

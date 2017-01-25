@@ -37,17 +37,21 @@ namespace PersonRegistryApp.Controllers
         }
 
         // POST: api/PersonRegistry
-        public void Post([FromBody]string value)
+        // Create Method
+        [HttpPost]
+        public HttpResponseMessage Post([FromBody]PersonRegistry pRegistry)
         {
-
+            return new HttpResponseMessage(HttpStatusCode.OK);
         }
 
         // PUT: api/PersonRegistry/5
+        // Update Method
         public void Put(int id, [FromBody]string value)
         {
         }
 
         // DELETE: api/PersonRegistry/5
+        //Delete Method
         public void Delete(int id)
         {
         }
